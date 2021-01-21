@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {IndexComponent} from './index.component';
+import {IndexRoutingModule} from './index.routes';
 
 
 
@@ -9,7 +10,8 @@ import {IndexComponent} from './index.component';
     IndexComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IndexRoutingModule
   ]
 })
 export class IndexModule { }

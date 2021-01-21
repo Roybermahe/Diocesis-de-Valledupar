@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200&display=swap');
+
+
+#logo-banner {
+  display: block;
+}
+
+.navbar-brand {
+  border-color: white;
+}
+@media only screen and (max-width: 987px) {
+  #logo-banner {
+    display: none;
+  }
+}
+
+
+.title-section {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  text-align: center;
+}
