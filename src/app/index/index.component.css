@@ -6,7 +6,7 @@
 }
 
 .navbar-brand {
-  border-color: white;
+  border-color: transparent;
 }
 @media only screen and (max-width: 987px) {
   #logo-banner {
@@ -18,4 +18,50 @@
 .title-section {
   font-family: 'Saira Extra Condensed', sans-serif;
   text-align: center;
+}
+
+
+.polygon-1 {
+  z-index:-1000;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.polygon-2 {
+  z-index: -2000;
+  position: absolute;
+  top: 0;
+}
+
+
+.navbar {
+  background-color: transparent;
+  color: none;
+}
+
+#blkInformation {
+  padding: 8% 15% 9% 15%;
+  font-size: 3hw;
+}
+
+#blkInformation h1 {
+  font-size: 4hw;
+}
+
+.card {
+  margin-top: 10%;
+  border-color: transparent;
+}
+
+.instagram, .facebook {
+  font-size: 23px;
+}
+
+.media {
+  margin-top: 15px;
+}
+
+.media-body {
+  font-size: 2hw;
 }

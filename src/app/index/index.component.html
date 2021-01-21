@@ -1,7 +1,9 @@
+<img src="../../assets/polygon-1.png" width="20%" class="polygon-1">
+<img src="../../assets/polygon-2.png" width="20%" class="polygon-2">
 <div class="menu">
   <img id="logo-banner" src="../../assets/logo.png" class="mx-auto mt-2 navbar-toggler" width="10%" >
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a id="logo" class="navbar-brand navbar-toggler" href="#" ata-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <img src="../../assets/logo.png" width="30" class="d-inline-block align-top" alt="">
@@ -13,13 +15,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link move-section" href="#blkInformation">Inicio <span class="sr-only">(current)</span></a>
+            <button class="nav-link btn btn-link move-section" (click)="scroll(blkInformation)">Inicio <span class="sr-only">(current)</span></button>
           </li>
           <li class="nav-item">
-            <a class="nav-link move-section" href="#blkServices">Servicios</a>
+            <button class="nav-link btn btn-link move-section" (click)="scroll(blkServices)">Servicios</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link move-section" href="#blkSocial">Acerca de</a>
+            <button class="nav-link btn btn-link move-section" (click)="scroll(blkSocial)">Redes Sociales</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-link move-section" (click)="scroll(blkCosts)">Precios</button>
           </li>
         </ul>
       </div>
@@ -27,15 +32,218 @@
   </nav>
 </div>
 
-<div id="blkInformation" class="container">
+<div id="blkInformation" #blkInformation class="container">
+  <h1>
+    ECCE HOMO
+    <br>
+    HE AQUÍ AL HOMBRE
+  </h1>
+  <br>
+  <p class="text-justify">
+    Cuenta la historia que un hombre de color, procedente de Rincón Hondo, fue encerrado bajo su propia solicitud para construir una imagen grandiosa. El hombre se mantuvo aislado durante varios días sin otro alimento que una pequeña cantidad de pan y agua.
+    <br><br>
+    El silencio impuesto por este aislamiento acabó inquietando a la gente. Unos días después de este encierro insólito, un grupo de pueblerinos acudió al lugar para conocer su estado de salud.
+    <br><br>
+    La sorpresa fue enorme: el local estaba vacío, sin rastros del artesano, y además, el agua seguía intacta. En medio de la sala, destacaba una imagen imponente, labrada de manera majestuosa que, poco después, fue llamada: “El Santo Ecce Homo” (“He aquí el hombre”).
+  </p>
+</div>
+
+<div id="blkServices" #blkServices class="container">
   <H6 class="title-section">ESTIMADOS FELIGRESES</H6>
-  <h2 class="title-section">NUESTROS SERVICIOS</h2>
+  <h1 class="title-section">NUESTROS SERVICIOS</h1>
+  <br>
+  <div class="container-fluid">
+    <div class="row container-fluid text-center">
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <img src="../../assets/lapida-sepulcral.png" width="20%">
+            <h5 class="card-title">Misa Exequial</h5>
+            <p class="card-text">Ceremonias religiosas u honras que se celebran por un difunto; funeral. La liturgia católica propone tres tipos de celebración de las exequias que corresponden a tres lugares de su desarrollo: la casa, la iglesia y el cementerio.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <img src="../../assets/confidencial.png" width="20%">
+            <h5 class="card-title">Confesiones</h5>
+            <p class="card-text">El sacramento de la confesión tambien es llamado reconciliación. Este sacramento consiste en un ritual en el que la persona decide contar sus pecados a un sacerdote que esta autorizado y facultado para darle la absolución de los mismos y que previa asignación de una penitencia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <img src="../../assets/bautismo.png" width="20%">
+            <h5 class="card-title">Bautismos</h5>
+            <p class="card-text">El Bautismo es el sacramento por el cual el hombre nace hacia la vida espiritual, por medio del agua y la invocación a la Santisima Trinidad: Padre, Hijo y Espiritu Santo. El bautismo es una figura simbólica de identificación espiritual del creyente con la muerte, y sepultura y resurrección de Jesús.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row container-fluid text-center">
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <img src="../../assets/anillos-de-boda.png" width="20%">
+            <h5 class="card-title">Matrimonios</h5>
+            <p class="card-text">El matrimonio es una "intima comunidad de la vida y del amor conyugal creada por Dios y regida por sus leyes, que se establece sobre la alianza de los conyuques", es decir, sobre su consentimiento irrevocable.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <img src="../../assets/gracias.png" width="20%">
+            <h5 class="card-title">Misas de acción de gracias</h5>
+            <p class="card-text">Como Acción de Gracias se denomina el día que tradicionalmente se dedica para manifestar nuestro agradecimiento a Dios.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <img src="../../assets/iglesia.png" width="20%">
+            <h5 class="card-title">Atención de feligreses</h5>
+            <p class="card-text">La atención a los feligreses es el servicio proporcionado por la iglesia con el fin de relacionarse con los feligreses y anticiparse a la satisfacción de sus necesidades. Es una herramienta eficaz para interactuar con los feligreses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<div id="blkSocial" #blkSocial class="container">
+  <H6 class="title-section">PUBLICACIONES</H6>
+  <h1 class="title-section">INSTAGRAM & FACEBOOK</h1>
+  <div class="text-center">
+    <span class="material-icons facebook">facebook</span>
+    <span class="iconify instagram" data-icon="mdi-instagram" data-inline="false"></span>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row container-fluid">
+      <div class="col-sm">
+        <div class="media">
+          <div class="media-body text-right mx-2">
+            1 febrero, 2020
+            <h5 class="mt-0">Catedral ECCEHOMO</h5>
+          </div>
+          <img class="mr-3" width="50%" src="../../assets/catedral.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="media">
+          <img class="mr-3" width="50%" src="../../assets/misa6dic.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            6 diciembre, 2020
+            <h5 class="mt-0">Misa 6 de diciembre</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="row container-fluid">
+      <div class="col-sm">
+        <div class="media">
+          <div class="media-body text-right mx-2">
+            17 diciembre, 2020
+            <h5 class="mt-0">ECCEHOMO amen</h5>
+          </div>
+          <img class="mr-3" width="50%" src="../../assets/amen.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="media">
+          <img class="mr-3" width="50%" src="../../assets/semanario.jpeg" alt="Generic placeholder image">
+          <div class="media-body">
+            6 diciembre, 2020
+            <h5 class="mt-0">Comienza la misa</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div id="blkServices" class="container">
-  <h3 class="title-section">ACERCA DE</h3>
-</div>
-
-<div id="blkSocial" class="container">
-
+<br><br><br>
+<div id="blkCosts" #blkCosts class="container">
+  <H6 class="title-section">NUESTROS PRECIOS</H6>
+  <h1 class="title-section">POR SERVICIO</h1>
+  <br><br>
+  <div class="row container-fluid text-center">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Misa Exequial</h5>
+          <p class="card-text">Ceremonias religiosas u honras que se celebran por un difunto.</p>
+          <br><br>
+          <h3>60k COP</h3>
+          <br><br>
+          <a href="#" class="btn btn-primary">Adquirir Servicio</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Confesionario</h5>
+          <p class="card-text">El sacramento de la confesión tambien es llamado reconciliación.</p>
+          <br><br>
+          <h3>40k COP</h3>
+          <br><br>
+          <a href="#" class="btn btn-primary">Adquirir Servicio</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Bautismos</h5>
+          <p class="card-text">El Bautismo es el sacramento por el cual el hombre nace hacia la vida espiritual.</p>
+          <br><br>
+          <h3>30k COP</h3>
+          <br><br>
+          <a href="#" class="btn btn-primary">Adquirir Servicio</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Matrimonios</h5>
+          <p class="card-text">El matrimonio es una "intima comunidad de la vida y del amor conyugal creada por Dios".</p>
+          <br><br>
+          <h3>30k COP</h3>
+          <br><br>
+          <a href="#" class="btn btn-primary">Adquirir Servicio</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Misas de accion de gracias</h5>
+          <p class="card-text">Se denomina el día que se dedica para manifestar nuestro agradecimiento a Dios.</p>
+          <br><br>
+          <h3>0 COP</h3>
+          <br><br>
+          <a href="#" class="btn btn-primary">Adquirir Servicio</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Atención de feligreses</h5>
+          <p class="card-text">La atención a los feligreses es el servicio proporcionado por la iglesia eficaz para interactuar con los feligreses.</p>
+          <br><br>
+          <h3>0 COP</h3>
+          <br><br>
+          <a href="#" class="btn btn-primary">Adquirir Servicio</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
